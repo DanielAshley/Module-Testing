@@ -1,0 +1,243 @@
+﻿Build started 7/21/2014 3:14:17 PM.
+     1>Project "C:\Users\dashley2\Desktop\Omni Module - WORKING\testInputModules\testInputModules\testInputModules.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\testInputModules.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\OpenHaptics\Academic\3.2\include /IC:\OpenHaptics\Academic\3.2\utilities\include /I.\include /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(303) : see reference to class template instantiation 'math::matrix<T>' being compiled
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(401): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(411): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(473): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(486): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(510): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(543): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(568): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(577): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(603): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(620): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(627): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(634): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(658): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(666): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(713): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(842): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(895): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(930): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\wmratypes.h(30) : see reference to class template instantiation 'math::matrix<T>' being compiled
+                 with
+                 [
+                     T=double
+                 ]
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\dashley2\desktop\omni module - working\testinputmodules\testinputmodules\wmratypes.h(73): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(35): error C2146: syntax error : missing ';' before identifier 'HHD'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(35): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(35): error C2146: syntax error : missing ';' before identifier 'hdInitDevice'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(35): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(39): error C2144: syntax error : 'void' should be preceded by ';'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(39): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(39): error C2086: 'int HDAPI' : redefinition
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPI'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(39): error C2146: syntax error : missing ';' before identifier 'hdMakeCurrentDevice'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(39): error C2182: 'HDAPIENTRY' : illegal use of type 'void'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(39): error C2371: 'HDAPIENTRY' : redefinition; different basic types
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPIENTRY'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(39): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(42): error C2144: syntax error : 'void' should be preceded by ';'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(42): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(42): error C2086: 'int HDAPI' : redefinition
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPI'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(42): error C2146: syntax error : missing ';' before identifier 'hdDisableDevice'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(42): error C2182: 'HDAPIENTRY' : illegal use of type 'void'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(42): error C2371: 'HDAPIENTRY' : redefinition; different basic types
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPIENTRY'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(42): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(45): error C2146: syntax error : missing ';' before identifier 'HHD'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(45): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(45): error C2086: 'int HDAPI' : redefinition
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPI'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(45): error C2146: syntax error : missing ';' before identifier 'hdGetCurrentDevice'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(45): error C2086: 'HHD HDAPIENTRY' : redefinition
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPIENTRY'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(45): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(50): error C2144: syntax error : 'void' should be preceded by ';'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(50): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(50): error C2086: 'int HDAPI' : redefinition
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPI'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(50): error C2146: syntax error : missing ';' before identifier 'hdBeginFrame'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(50): error C2182: 'HDAPIENTRY' : illegal use of type 'void'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(50): error C2371: 'HDAPIENTRY' : redefinition; different basic types
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPIENTRY'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(50): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(51): error C2144: syntax error : 'void' should be preceded by ';'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(51): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(51): error C2086: 'int HDAPI' : redefinition
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPI'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(51): error C2146: syntax error : missing ';' before identifier 'hdEndFrame'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(51): error C2182: 'HDAPIENTRY' : illegal use of type 'void'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(51): error C2371: 'HDAPIENTRY' : redefinition; different basic types
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPIENTRY'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(51): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(55): error C2146: syntax error : missing ';' before identifier 'HDErrorInfo'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(55): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(55): error C2086: 'int HDAPI' : redefinition
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPI'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(55): error C2146: syntax error : missing ';' before identifier 'hdGetError'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(55): error C2371: 'HDAPIENTRY' : redefinition; different basic types
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPIENTRY'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(55): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(59): error C2146: syntax error : missing ';' before identifier 'HDstring'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(59): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(59): error C2086: 'int HDAPI' : redefinition
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPI'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(59): error C2146: syntax error : missing ';' before identifier 'hdGetErrorString'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(59): error C2040: 'HDAPIENTRY' : 'HDstring' differs in levels of indirection from 'HHD'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(59): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(63): error C2144: syntax error : 'void' should be preceded by ';'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(63): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(63): error C2086: 'int HDAPI' : redefinition
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPI'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(63): error C2146: syntax error : missing ';' before identifier 'hdEnable'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(63): error C2182: 'HDAPIENTRY' : illegal use of type 'void'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(63): error C2371: 'HDAPIENTRY' : redefinition; different basic types
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPIENTRY'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(63): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(64): error C2144: syntax error : 'void' should be preceded by ';'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(64): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(64): error C2086: 'int HDAPI' : redefinition
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPI'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(64): error C2146: syntax error : missing ';' before identifier 'hdDisable'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(64): error C2182: 'HDAPIENTRY' : illegal use of type 'void'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(64): error C2371: 'HDAPIENTRY' : redefinition; different basic types
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPIENTRY'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(64): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(65): error C2146: syntax error : missing ';' before identifier 'HDboolean'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(65): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(65): error C2086: 'int HDAPI' : redefinition
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPI'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(65): error C2146: syntax error : missing ';' before identifier 'hdIsEnabled'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(65): error C2371: 'HDAPIENTRY' : redefinition; different basic types
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPIENTRY'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(65): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(69): error C2144: syntax error : 'void' should be preceded by ';'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(69): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(69): error C2086: 'int HDAPI' : redefinition
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPI'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(69): error C2146: syntax error : missing ';' before identifier 'hdGetBooleanv'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(69): error C2182: 'HDAPIENTRY' : illegal use of type 'void'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(69): error C2371: 'HDAPIENTRY' : redefinition; different basic types
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPIENTRY'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(69): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(70): error C2144: syntax error : 'void' should be preceded by ';'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(70): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(70): error C2086: 'int HDAPI' : redefinition
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPI'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(70): error C2146: syntax error : missing ';' before identifier 'hdGetIntegerv'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(70): error C2182: 'HDAPIENTRY' : illegal use of type 'void'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(70): error C2371: 'HDAPIENTRY' : redefinition; different basic types
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPIENTRY'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(70): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(71): error C2144: syntax error : 'void' should be preceded by ';'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(71): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(71): error C2086: 'int HDAPI' : redefinition
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPI'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(71): error C2146: syntax error : missing ';' before identifier 'hdGetFloatv'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(71): error C2182: 'HDAPIENTRY' : illegal use of type 'void'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(71): error C2371: 'HDAPIENTRY' : redefinition; different basic types
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPIENTRY'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(71): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(72): error C2144: syntax error : 'void' should be preceded by ';'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(72): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(72): error C2086: 'int HDAPI' : redefinition
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPI'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(72): error C2146: syntax error : missing ';' before identifier 'hdGetDoublev'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(72): error C2182: 'HDAPIENTRY' : illegal use of type 'void'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(72): error C2371: 'HDAPIENTRY' : redefinition; different basic types
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPIENTRY'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(72): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(73): error C2144: syntax error : 'void' should be preceded by ';'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(73): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(73): error C2086: 'int HDAPI' : redefinition
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPI'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(73): error C2146: syntax error : missing ';' before identifier 'hdGetLongv'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(73): error C2182: 'HDAPIENTRY' : illegal use of type 'void'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(73): error C2371: 'HDAPIENTRY' : redefinition; different basic types
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPIENTRY'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(73): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(74): error C2146: syntax error : missing ';' before identifier 'HDstring'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(74): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(74): error C2086: 'int HDAPI' : redefinition
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPI'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(74): error C2146: syntax error : missing ';' before identifier 'hdGetString'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(74): error C2040: 'HDAPIENTRY' : 'HDstring' differs in levels of indirection from 'HHD'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(74): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(78): error C2144: syntax error : 'void' should be preceded by ';'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(78): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(78): error C2086: 'int HDAPI' : redefinition
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPI'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(78): error C2146: syntax error : missing ';' before identifier 'hdSetBooleanv'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(78): error C2182: 'HDAPIENTRY' : illegal use of type 'void'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(78): error C2371: 'HDAPIENTRY' : redefinition; different basic types
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPIENTRY'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(78): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(79): error C2144: syntax error : 'void' should be preceded by ';'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(79): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(79): error C2086: 'int HDAPI' : redefinition
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPI'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(79): error C2146: syntax error : missing ';' before identifier 'hdSetIntegerv'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(79): error C2182: 'HDAPIENTRY' : illegal use of type 'void'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(79): error C2371: 'HDAPIENTRY' : redefinition; different basic types
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPIENTRY'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(79): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(80): error C2144: syntax error : 'void' should be preceded by ';'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(80): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(80): error C2086: 'int HDAPI' : redefinition
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPI'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(80): error C2146: syntax error : missing ';' before identifier 'hdSetFloatv'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(80): error C2182: 'HDAPIENTRY' : illegal use of type 'void'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(80): error C2371: 'HDAPIENTRY' : redefinition; different basic types
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPIENTRY'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(80): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(81): error C2144: syntax error : 'void' should be preceded by ';'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(81): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(81): error C2086: 'int HDAPI' : redefinition
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPI'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(81): error C2146: syntax error : missing ';' before identifier 'hdSetDoublev'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(81): error C2182: 'HDAPIENTRY' : illegal use of type 'void'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(81): error C2371: 'HDAPIENTRY' : redefinition; different basic types
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPIENTRY'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(81): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(82): error C2144: syntax error : 'void' should be preceded by ';'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(82): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(82): error C2086: 'int HDAPI' : redefinition
+                 c:\openhaptics\academic\3.2\include\hd\hddevice.h(35) : see declaration of 'HDAPI'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(82): error C2146: syntax error : missing ';' before identifier 'hdSetLongv'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(82): error C2182: 'HDAPIENTRY' : illegal use of type 'void'
+     1>c:\openhaptics\academic\3.2\include\hd\hddevice.h(82): fatal error C1003: error count exceeds 100; stopping compilation
+     1>Done Building Project "C:\Users\dashley2\Desktop\Omni Module - WORKING\testInputModules\testInputModules\testInputModules.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.65
