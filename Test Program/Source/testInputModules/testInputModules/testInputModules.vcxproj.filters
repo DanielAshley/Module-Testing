@@ -20,12 +20,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="omni_lib.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Arm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="matrix.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -35,10 +29,8 @@
     <ClInclude Include="WmraTypes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="omni_lib.lib">
+    <ClInclude Include="WMRA_module.h">
       <Filter>Header Files</Filter>
-    </Library>
+    </ClInclude>
   </ItemGroup>
 </Project>
