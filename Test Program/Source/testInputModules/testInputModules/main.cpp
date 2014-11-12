@@ -7,11 +7,12 @@
 
 using namespace std;
 
+
 int main()
 {
-	WMRA::Pose p;
-	WMRA::WMRA_module a;
-	a.initialize();
+	WMRA::Pose curPos;
+	WMRA::WMRA_module wmraArm;
+	wmraArm.initialize();
 	Sleep(5000);
 
 
@@ -19,17 +20,66 @@ int main()
 	{
 		Sleep(1000);
 
-		p = a.getPose();
-		//cout << "Arm Pose: " << p.x << ", " << p.y << ", " << p.z << ", " << p.roll << ", " << p.pitch << ", " << p.yaw << endl;
+		curPos = wmraArm.getPose();
 
-		p.x = p.x + 10.0;
+		int length;
+		cout << "Length? " << endl;
+		cin >> length;
 
-		cout << "Arm Pose: " << p.x << ", " << p.y << ", " << p.z << ", " << p.roll << ", " << p.pitch << ", " << p.yaw << endl;
-//			cout << "Sent Pose: " << tgt.x << ", " << tgt.y << ", " << tgt.z << ", " << tgt.roll << ", " << tgt.pitch << ", " << tgt.yaw << endl;
+		int loopCount;
+		cout << "Number of loops? " << endl;
+		cin >> loopCount;
 
-		//a.teleoperation(p, WMRA::ARM_FRAME_REL);	
-		//a.teleoperation(p, WMRA::ARM_FRAME_PILOT_MODE);		
-		a.teleoperation(p);		
+		int choice = 0;
+		cout << "Begin Square Test? 1=Yes 0=No" << endl;
+		cin >> choice;
+
+		WMRA::Pose dest1,dest2,dest3,dest4;
+		dest1 = dest2 = dest3 = dest4 = curPos;	
+
+		dest2.x = dest1.x;
+		dest2.y = dest1.y+length;
+
+		dest3.x = dest2.x+length;
+		dest3.y = dest2.y;
+
+		dest4.x = dest3.x;
+		dest4.y = dest3.y-length;
+
+		// Move arm to starting position (dest1)
+		wmraArm.autonomous(dest1, WMRA::ARM_FRAME_PILOT_MODE,false); // Moves arm
+		Sleep(6000); // wait for motion end
+
+		int delay = (int)(length/50 * 1000) + 20 ;
+
+		while(loopCount > 0 && choice==1)
+		{
+			cout << "Loop: " << loopCount << endl;
+			wmraArm.autonomous(dest2, WMRA::ARM_FRAME_PILOT_MODE,false); // Moves arm
+			Sleep(delay); // wait for motion end
+			wmraArm.autonomous(dest3, WMRA::ARM_FRAME_PILOT_MODE,false); // Moves arm
+			Sleep(delay); // wait for motion end
+			wmraArm.autonomous(dest4, WMRA::ARM_FRAME_PILOT_MODE,false); // Moves arm
+			Sleep(delay); // wait for motion end
+			wmraArm.autonomous(dest1, WMRA::ARM_FRAME_PILOT_MODE,false); // Moves arm
+			Sleep(delay); // wait for motion end
+			loopCount--;
+		}
+
+		wmraArm.autonomous(dest1, WMRA::ARM_FRAME_PILOT_MODE,false); // Moves arm
+		Sleep(6000); // wait for motion end
+
+//		//cout << "Arm Pose: " << p.x << ", " << p.y << ", " << p.z << ", " << p.roll << ", " << p.pitch << ", " << p.yaw << endl;
+//
+//		p.x = p.x + 10.0;
+//
+//		cout << "Arm Pose: " << p.x << ", " << p.y << ", " << p.z << ", " << p.roll << ", " << p.pitch << ", " << p.yaw << endl;
+////			cout << "Sent Pose: " << tgt.x << ", " << tgt.y << ", " << tgt.z << ", " << tgt.roll << ", " << tgt.pitch << ", " << tgt.yaw << endl;
+//
+//		//a.teleoperation(p, WMRA::ARM_FRAME_REL);	
+//		//a.teleoperation(p, WMRA::ARM_FRAME_PILOT_MODE);		
+//		a.teleoperation(p);
+
 	}
 	return 0;
 }
