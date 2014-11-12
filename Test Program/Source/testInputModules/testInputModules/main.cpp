@@ -68,7 +68,7 @@ int moveSquare()
 
 int main()
 {
-	float gain = 0.03;
+	float gain = 0.3;
 	WMRA::Pose curPos, deltaPos;
 	WMRA::WMRA_module wmraArm;
 	wmraArm.initialize();
@@ -82,12 +82,13 @@ int main()
 
 
 	int count = 0;
-	while(count <5)
+	while(count <50)
 	{
 		curPos = wmraArm.getPose();
 		deltaPos = o.getDeltaPose();
 		if(deltaPos.x != 0 || deltaPos.y != 0 || deltaPos.z != 0)
 		{
+			cout << " MOVING:" << count << endl;
 			count++;
 			curPos.x = curPos.x+(deltaPos.x*gain);
 			curPos.y = curPos.y+(deltaPos.y*gain);
@@ -100,5 +101,7 @@ int main()
 	Sleep(5000); // wait 5 seconds
 	
 	wmraArm.toReady(); // moves arm to ready position
+
+//	cin >> count;
 	return 0;
 }
