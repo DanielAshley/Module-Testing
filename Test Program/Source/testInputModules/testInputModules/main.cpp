@@ -1,7 +1,8 @@
 
-//#include "omni_lib.h"
+
 #include "WmraTypes.h"
 #include "WMRA_module.h"
+#include "omni_lib.h"
 
 #include <Windows.h>
 
@@ -67,34 +68,36 @@ int moveSquare()
 
 int main()
 {
-	WMRA::Pose curPos;
+	float gain = 0.03;
+	WMRA::Pose curPos, deltaPos;
 	WMRA::WMRA_module wmraArm;
 	wmraArm.initialize();
+
+	omni o;
+
 	Sleep(5000);
 
 	curPos = wmraArm.getPose();
+	deltaPos = o.getDeltaPose();
 
-	for(int i = 0; i<4; i++)
+
+	int count = 0;
+	while(count <5)
 	{
-		curPos.x = curPos.x+10;
-		wmraArm.autonomous(curPos, WMRA::ARM_FRAME_PILOT_MODE); // Moves arm
-	}
-	for(int i = 0; i<4; i++)
-	{
-		curPos.y = curPos.y+10;
-		wmraArm.autonomous(curPos, WMRA::ARM_FRAME_PILOT_MODE); // Moves arm
-	}
-	for(int i = 0; i<4; i++)
-	{
-		curPos.x = curPos.x-10;
-		wmraArm.autonomous(curPos, WMRA::ARM_FRAME_PILOT_MODE); // Moves arm
-	}
-	for(int i = 0; i<4; i++)
-	{
-		curPos.y = curPos.y-10;
-		wmraArm.autonomous(curPos, WMRA::ARM_FRAME_PILOT_MODE); // Moves arm
+		curPos = wmraArm.getPose();
+		deltaPos = o.getDeltaPose();
+		if(deltaPos.x != 0 || deltaPos.y != 0 || deltaPos.z != 0)
+		{
+			count++;
+			curPos.x = curPos.x+(deltaPos.x*gain);
+			curPos.y = curPos.y+(deltaPos.y*gain);
+			curPos.z = curPos.z+(deltaPos.z*gain);
+			wmraArm.autonomous(curPos, WMRA::ARM_FRAME_PILOT_MODE); // Moves arm
+		}
 	}	
-	Sleep(12000); // wait 2 seconds
+
+
+	Sleep(5000); // wait 5 seconds
 	
 	wmraArm.toReady(); // moves arm to ready position
 	return 0;
