@@ -15,9 +15,51 @@ int main()
 	int count = 0;
 	
 	WMRA::Pose curPos, deltaPos;
+//	WMRA::WMRA_module wmraArm;
+
+	WMRA::omni o;
+
+	cout << "Starting in 5...\n\n" << endl;
+	Sleep(5000);
+	cout << "Moving!\n\n" << endl;
+	
+	while(count < 100)
+	{
+		Sleep(100);
+		deltaPos = o.getDeltaPose();
+		cout << "Omni Pose: x=" << deltaPos.x << "\ty=" << deltaPos.y << "\tz=" << deltaPos.z << endl; 
+		if(deltaPos.x != 0 || deltaPos.y != 0 || deltaPos.z != 0)
+		{
+			count++;
+			deltaPos.x = (deltaPos.x*gain);
+			deltaPos.y = (deltaPos.y*gain);
+			deltaPos.z = (deltaPos.z*gain);
+//			wmraArm.teleoperation(deltaPos,dt);
+		}
+		else
+		{
+			deltaPos.clear();
+//			wmraArm.teleoperation(deltaPos,dt);
+		}
+	}
+//	wmraArm.toReady(); // moves arm to ready position
+	cout << "Sleeping for 20 seconds.." << endl;
+	Sleep(20000); // wait 20 seconds
+	return 0;
+}
+
+
+int teleoperationWithOmni()
+{
+	float gain = 1.2;
+	const double deg2rad = 0.0174532925;
+	double dt = 10;
+	int count = 0;
+	
+	WMRA::Pose curPos, deltaPos;
 	WMRA::WMRA_module wmraArm;
 
-	omni o;
+	WMRA::omni o;
 
 	cout << "Starting in 5...\n\n" << endl;
 	Sleep(5000);
