@@ -1,12 +1,83 @@
 
-
 #include "WmraTypes.h"
 #include "WMRA_module.h"
-//#include "omni_lib.h"
+#include "omni_lib.h"
 
 #include <Windows.h>
 
 using namespace std;
+
+int main()
+{
+	float gain = 1.2;
+	const double deg2rad = 0.0174532925;
+	double dt = 10;
+	int count = 0;
+	
+	WMRA::Pose curPos, deltaPos;
+	WMRA::WMRA_module wmraArm;
+
+	omni o;
+
+	cout << "Starting in 5...\n\n" << endl;
+	Sleep(5000);
+	cout << "Moving!\n\n" << endl;
+	
+	while(count < 200)
+	{
+		Sleep(300);
+		deltaPos = o.getDeltaPose();
+		if(deltaPos.x != 0 || deltaPos.y != 0 || deltaPos.z != 0)
+		{
+			count++;
+			deltaPos.x = (deltaPos.x*gain);
+			deltaPos.y = (deltaPos.y*gain);
+			deltaPos.z = (deltaPos.z*gain);
+			wmraArm.teleoperation(deltaPos,dt);
+		}
+		else
+		{
+			deltaPos.clear();
+			wmraArm.teleoperation(deltaPos,dt);
+		}
+	}
+	wmraArm.toReady(); // moves arm to ready position
+	cout << "Sleeping for 20 seconds.." << endl;
+	Sleep(20000); // wait 20 seconds
+	return 0;
+}
+
+//
+//int circleWithTeleoperation()
+//{
+//	const double deg2rad = 0.0174532925;
+//	double dt = 10;
+//	int radius = 150;
+//	
+//	WMRA::Pose curPos, deltaPos;
+//	WMRA::WMRA_module wmraArm;
+//
+//	cout << "Starting in 5...\n\n" << endl;
+//	Sleep(5000);
+//	cout << "Moving!\n\n" << endl;
+//
+//	curPos = wmraArm.getPose();
+//	deltaPos.clear();
+//	deltaPos.x = radius*cos(0.0);
+//	deltaPos.y = radius*sin(0.0);
+//
+//	for(int count = 0; count < 360; count++)
+//	{
+//		Sleep(300);
+//		deltaPos.x = radius*cos(double(count*deg2rad));
+//		deltaPos.y = radius*sin(double(count*deg2rad));
+//		wmraArm.teleoperation(deltaPos,dt);
+//	}		
+//	wmraArm.toReady(); // moves arm to ready position
+//	cout << "Sleeping for 20 seconds.." << endl;
+//	Sleep(20000); // wait 20 seconds
+//	return 0;
+//}
 
 //
 //int moveSquare()
@@ -106,35 +177,3 @@ using namespace std;
 //	return 0;
 //}
 
-int main()
-{
-	const double deg2rad = 0.0174532925;
-	double dt = 500;
-	int radius = 100;
-	
-	WMRA::Pose curPos, deltaPos;
-	WMRA::WMRA_module wmraArm;
-	wmraArm.initialize();
-
-	Sleep(5000);
-
-	curPos = wmraArm.getPose();
-	deltaPos.clear();
-	deltaPos.x = radius*cos(0.0);
-	deltaPos.y = radius*sin(0.0);
-
-	int count = 0;
-	while(count < 360)
-	{
-		Sleep(100);
-		deltaPos.x = radius*cos(double(count*deg2rad));
-		deltaPos.y = radius*sin(double(count*deg2rad));
-		wmraArm.teleoperation(deltaPos,dt);
-		count++;
-	}	
-	Sleep(5000); // wait 5 seconds
-	
-	wmraArm.toReady(); // moves arm to ready position
-
-	return 0;
-}
