@@ -15,7 +15,8 @@ namespace WMRA{
 		WMRA_module(void);
 		bool initialize();
 		bool autonomous(WMRA::Pose dest, WMRA::CordFrame crodFr, bool blocking = true);
-		bool teleoperation(WMRA::Pose data);
+		bool teleoperation(WMRA::Pose deltaPose);
+		bool teleoperation(WMRA::Pose deltaPose, double dt);
 		bool teleoperation(WMRA::Pose dest, WMRA::CordFrame cordFr);
 		bool openGripper(bool blocking = true);
 		bool closeGripper(bool blocking = true);
