@@ -109,7 +109,9 @@ using namespace std;
 int main()
 {
 	const double deg2rad = 0.0174532925;
+	double dt = 500;
 	int radius = 100;
+	
 	WMRA::Pose curPos, deltaPos;
 	WMRA::WMRA_module wmraArm;
 	wmraArm.initialize();
@@ -124,9 +126,10 @@ int main()
 	int count = 0;
 	while(count < 360)
 	{
+		Sleep(100);
 		deltaPos.x = radius*cos(double(count*deg2rad));
 		deltaPos.y = radius*sin(double(count*deg2rad));
-		wmraArm.teleoperation(deltaPos,500);
+		wmraArm.teleoperation(deltaPos,dt);
 		count++;
 	}	
 	Sleep(5000); // wait 5 seconds
