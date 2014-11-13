@@ -1,79 +1,76 @@
-﻿Build started 11/13/2014 2:57:47 PM.
-     1>Project "C:\Users\dashley2\Documents\GitHub\Module-Testing\Test Program\Source\testInputModules\testInputModules\testInputModules.vcxproj" on node 2 (rebuild target(s)).
-     1>InitializeBuildStatus:
-         Touching "Release\testInputModules.unsuccessfulbuild".
+﻿Build started 11/13/2014 6:42:01 PM.
+     1>Project "J:\Users\Drizzle005\Documents\GitHub\Module-Testing\Test Program\Source\testInputModules\testInputModules\testInputModules.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Release\testInputModules.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Release\testInputModules.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\OpenHaptics\Academic\3.2\include /IC:\OpenHaptics\Academic\3.2\utilities\include /I.\include /Zi /nologo /W3 /WX- /O2 /Oy- /D _MBCS /D _MBCS /D WIN32 /D NDEBUG /D _CONSOLE /D _MBCS /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         J:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I\include /I\utilities\include /I.\include /Zi /nologo /W3 /WX- /O2 /Oy- /D _MBCS /D _MBCS /D WIN32 /D NDEBUG /D _CONSOLE /D _MBCS /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          main.cpp
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-                 c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(303) : see reference to class template instantiation 'math::matrix<T>' being compiled
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(401): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(411): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(473): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(486): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(510): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(543): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(568): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(577): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(603): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(620): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(627): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(634): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(658): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(666): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(713): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(842): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(895): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(930): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-                 c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\WmraTypes.h(30) : see reference to class template instantiation 'math::matrix<T>' being compiled
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(303) : see reference to class template instantiation 'math::matrix<T>' being compiled
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(401): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(411): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(473): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(486): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(510): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(543): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(568): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(577): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(603): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(620): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(627): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(634): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(658): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(666): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(713): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(842): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(895): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(930): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(226): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+                 j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\WmraTypes.h(30) : see reference to class template instantiation 'math::matrix<T>' being compiled
                  with
                  [
                      T=double
                  ]
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>c:\users\dashley2\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
-     1>main.cpp(12): warning C4305: 'initializing' : truncation from 'double' to 'float'
-     1>main.cpp(54): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(227): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(234): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(235): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(239): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(249): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(250): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(251): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>j:\users\drizzle005\documents\github\module-testing\test program\source\testinputmodules\testinputmodules\matrix.h(254): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\dashley2\Documents\GitHub\Module-Testing\Test Program\Source\testInputModules\Release\testInputModules.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\OpenHaptics\Academic\3.2\lib\Win32\Release /LIBPATH:C:\OpenHaptics\Academic\3.2\utilities\lib\Win32\Release /LIBPATH:C:\OpenHaptics\Academic\3.2\lib\Win32 omni_lib.lib WMRA_module.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib msvcrt.lib msvcmrt.lib Ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\testInputModules.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\dashley2\Documents\GitHub\Module-Testing\Test Program\Source\testInputModules\Release\testInputModules.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\dashley2\Documents\GitHub\Module-Testing\Test Program\Source\testInputModules\Release\testInputModules.lib" /MACHINE:X86 Release\main.obj
-     1>omni_lib.lib(omni_lib.obj) : error LNK2001: unresolved external symbol __imp__hdDisableDevice@4
-     1>omni_lib.lib(omni_lib.obj) : error LNK2001: unresolved external symbol __imp__hdUnschedule@4
-     1>omni_lib.lib(omni_lib.obj) : error LNK2001: unresolved external symbol __imp__hdStopScheduler@0
-     1>omni_lib.lib(omni_lib.obj) : error LNK2001: unresolved external symbol __imp__hdWaitForCompletion@8
-     1>omni_lib.lib(omni_lib.obj) : error LNK2001: unresolved external symbol _hduIsSchedulerError
-     1>omni_lib.lib(omni_lib.obj) : error LNK2001: unresolved external symbol __imp__hdGetError@0
-     1>omni_lib.lib(omni_lib.obj) : error LNK2001: unresolved external symbol __imp__hdEndFrame@4
-     1>omni_lib.lib(omni_lib.obj) : error LNK2001: unresolved external symbol __imp__hdSetDoublev@8
-     1>omni_lib.lib(omni_lib.obj) : error LNK2001: unresolved external symbol __imp__hdGetDoublev@8
-     1>omni_lib.lib(omni_lib.obj) : error LNK2001: unresolved external symbol __imp__hdBeginFrame@4
-     1>omni_lib.lib(omni_lib.obj) : error LNK2001: unresolved external symbol __imp__hdGetCurrentDevice@0
-     1>omni_lib.lib(omni_lib.obj) : error LNK2001: unresolved external symbol __imp__hdScheduleAsynchronous@12
-     1>omni_lib.lib(omni_lib.obj) : error LNK2001: unresolved external symbol __imp__hdStartScheduler@0
-     1>omni_lib.lib(omni_lib.obj) : error LNK2001: unresolved external symbol __imp__hdEnable@4
-     1>omni_lib.lib(omni_lib.obj) : error LNK2001: unresolved external symbol _hduPrintError
-     1>omni_lib.lib(omni_lib.obj) : error LNK2001: unresolved external symbol __imp__hdInitDevice@4
-     1>C:\Users\dashley2\Documents\GitHub\Module-Testing\Test Program\Source\testInputModules\Release\testInputModules.exe : fatal error LNK1120: 16 unresolved externals
-     1>Done Building Project "C:\Users\dashley2\Documents\GitHub\Module-Testing\Test Program\Source\testInputModules\testInputModules\testInputModules.vcxproj" (rebuild target(s)) -- FAILED.
+         J:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"J:\Users\Drizzle005\Documents\GitHub\Module-Testing\Test Program\Source\testInputModules\Release\testInputModules.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:\lib\Win32\Release /LIBPATH:\utilities\lib\Win32\Release /LIBPATH:\lib\Win32 omni_lib.lib WMRA_module.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib msvcrt.lib msvcmrt.lib Ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\testInputModules.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"J:\Users\Drizzle005\Documents\GitHub\Module-Testing\Test Program\Source\testInputModules\Release\testInputModules.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"J:\Users\Drizzle005\Documents\GitHub\Module-Testing\Test Program\Source\testInputModules\Release\testInputModules.lib" /MACHINE:X86 Release\main.obj
+         Generating code
+     1>j:\users\drizzle005\documents\github\wmra-mod-program\src\motorcontroller.cpp(488): warning C4715: 'MotorController::positionControl' : not all control paths return a value
+     1>j:\users\drizzle005\documents\github\wmra-mod-program\src\motorcontroller.cpp(451): warning C4715: 'MotorController::definePosition' : not all control paths return a value
+     1>j:\users\drizzle005\documents\github\wmra-mod-program\src\motorcontroller.cpp(423): warning C4715: 'MotorController::setDecel' : not all control paths return a value
+     1>j:\users\drizzle005\documents\github\wmra-mod-program\src\motorcontroller.cpp(399): warning C4715: 'MotorController::setAccel' : not all control paths return a value
+     1>j:\users\drizzle005\documents\github\wmra-mod-program\src\motorcontroller.cpp(375): warning C4715: 'MotorController::setMaxVelocity' : not all control paths return a value
+     1>j:\users\drizzle005\documents\github\wmra-mod-program\src\motorcontroller.cpp(298): warning C4715: 'MotorController::readPos' : not all control paths return a value
+         Finished generating code
+         testInputModules.vcxproj -> J:\Users\Drizzle005\Documents\GitHub\Module-Testing\Test Program\Source\testInputModules\Release\testInputModules.exe
+       Manifest:
+         J:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"J:\Users\Drizzle005\Documents\GitHub\Module-Testing\Test Program\Source\testInputModules\Release\testInputModules.exe;#1" /manifest Release\testInputModules.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\testInputModules.unsuccessfulbuild".
+         Touching "Release\testInputModules.lastbuildstate".
+     1>Done Building Project "J:\Users\Drizzle005\Documents\GitHub\Module-Testing\Test Program\Source\testInputModules\testInputModules\testInputModules.vcxproj" (rebuild target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:01.71
+Time Elapsed 00:00:04.43

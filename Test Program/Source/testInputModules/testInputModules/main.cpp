@@ -1,93 +1,214 @@
 
 #include "WmraTypes.h"
 #include "WMRA_module.h"
-#include "omni_lib.h"
+//#include "omni_lib.h"
 
 #include <Windows.h>
+#include <iostream>
+#include <conio.h>
 
 using namespace std;
 
-int main()
-{
-	float gain = 1.2;
-	const double deg2rad = 0.0174532925;
-	double dt = 10;
-	int count = 0;
+void main(){
+	// Initialize WMRA
+	WMRA::WMRA_module wmra;
 	
-	WMRA::Pose curPos, deltaPos;
+	//Initialize Variables
+	int currentMotor;
+	char keypress;
+
+
+	cout << "\t~~~~~ Welcome to the Mr.Fix-It Program ~~~~~\n" << endl;
+	cout << "Press h for help or move joint 1" << endl;
+
+	while (1)
+    {
+		keypress = ' ';
+		// Check for keyboard input.
+		if (_kbhit())
+			keypress = _getch();
+		keypress = toupper(keypress);
+
+		if (keypress == 'H')
+		{
+			// #DEBUG - add help menu
+			cout << "\t ~~~~~ Help Menu ~~~~~" << endl;
+		}
+		else if(keypress == '1')
+		{
+			currentMotor = 0;
+			cout << "Joint 1 Selected" << endl;
+		}
+		else if(keypress == '2')
+		{
+			currentMotor = 1;
+			cout << "Joint 2 Selected" << endl;
+		}
+		else if(keypress == '3')
+		{
+			currentMotor = 2;
+			cout << "Joint 3 Selected" << endl;
+		}
+		else if(keypress == '4')
+		{
+			currentMotor = 3;
+			cout << "Joint 4 Selected" << endl;
+		}
+		else if(keypress == '5')
+		{
+			currentMotor = 4;
+			cout << "Joint 5 Selected" << endl;
+		}
+		else if(keypress == '6')
+		{
+			currentMotor = 5;
+			cout << "Joint 6 Selected" << endl;
+		}
+		else if(keypress == '7')
+		{
+			currentMotor = 6;
+			cout << "Joint 7 Selected" << endl;
+		}
+		else if(keypress == '8')
+		{
+			currentMotor = 7;
+			cout << "Joint 8 Selected" << endl;
+		}
+		else if(keypress == 'W')
+		{
+			wmra.moveJoint(currentMotor,0.03,1);
+		}
+		else if(keypress == 'S')
+		{
+			wmra.moveJoint(currentMotor,0.03,1);
+		}
+		else if(keypress == 'D')
+		{
+			wmra.stop();
+		}
+		else if(keypress == 'Q')
+		{
+			return;
+		}
+		else if(keypress == 'P')
+		{
+			WMRA::JointValueSet joints = wmra.getJointAngles();
+			WMRA::Pose currentPose = wmra.getPose();
+
+			cout << "\t-------------------------------------" << endl;
+			cout << "\t ~~~~~ Current Joint Positions ~~~~~" << endl;
+			cout << "Joint 1: " << joints.Joint[0] << endl;
+			cout << "Joint 2: " << joints.Joint[1] << endl;
+			cout << "Joint 3: " << joints.Joint[2] << endl;
+			cout << "Joint 4: " << joints.Joint[3] << endl;
+			cout << "Joint 5: " << joints.Joint[4] << endl;
+			cout << "Joint 6: " << joints.Joint[5] << endl;
+			cout << "Joint 7: " << joints.Joint[6] << endl;
+			cout << "Joint 8: " << joints.Joint[7] << endl;
+			
+			cout << "\t ~~~~~ Current Arm Pose ~~~~~" << endl;
+			cout << "X: " << currentPose.x << endl;
+			cout << "Y: " << currentPose.y << endl;
+			cout << "Z: " << currentPose.z << endl;
+			cout << "Roll: " << currentPose.roll << endl;
+			cout << "Pitch: " << currentPose.pitch << endl;
+			cout << "Yaw: " << currentPose.yaw << endl;
+			cout << "\t-------------------------------------" << endl;
+		}
+		else if(keypress == ' ')
+		{
+			// do nothing
+		}
+		else
+		{
+			// display key value if an unused key is pressed
+			cout << keypress << endl;
+		}
+	}
+
+}
+//
+//int main()
+//{
+//	float gain = 1.2;
+//	const double deg2rad = 0.0174532925;
+//	double dt = 10;
+//	int count = 0;
+//	
+//	WMRA::Pose curPos, deltaPos;
+////	WMRA::WMRA_module wmraArm;
+//
+//	WMRA::omni o;
+//
+//	cout << "Starting in 5...\n\n" << endl;
+//	Sleep(5000);
+//	cout << "Moving!\n\n" << endl;
+//	
+//	while(count < 100)
+//	{
+//		Sleep(100);
+//		deltaPos = o.getDeltaPose();
+//		cout << "Omni Pose: x=" << deltaPos.x << "\ty=" << deltaPos.y << "\tz=" << deltaPos.z << endl; 
+//		if(deltaPos.x != 0 || deltaPos.y != 0 || deltaPos.z != 0)
+//		{
+//			count++;
+//			deltaPos.x = (deltaPos.x*gain);
+//			deltaPos.y = (deltaPos.y*gain);
+//			deltaPos.z = (deltaPos.z*gain);
+////			wmraArm.teleoperation(deltaPos,dt);
+//		}
+//		else
+//		{
+//			deltaPos.clear();
+////			wmraArm.teleoperation(deltaPos,dt);
+//		}
+//	}
+////	wmraArm.toReady(); // moves arm to ready position
+//	cout << "Sleeping for 20 seconds.." << endl;
+//	Sleep(20000); // wait 20 seconds
+//	return 0;
+//}
+//
+//
+//int teleoperationWithOmni()
+//{
+//	float gain = 1.2;
+//	const double deg2rad = 0.0174532925;
+//	double dt = 10;
+//	int count = 0;
+//	
+//	WMRA::Pose curPos, deltaPos;
 //	WMRA::WMRA_module wmraArm;
-
-	WMRA::omni o;
-
-	cout << "Starting in 5...\n\n" << endl;
-	Sleep(5000);
-	cout << "Moving!\n\n" << endl;
-	
-	while(count < 100)
-	{
-		Sleep(100);
-		deltaPos = o.getDeltaPose();
-		cout << "Omni Pose: x=" << deltaPos.x << "\ty=" << deltaPos.y << "\tz=" << deltaPos.z << endl; 
-		if(deltaPos.x != 0 || deltaPos.y != 0 || deltaPos.z != 0)
-		{
-			count++;
-			deltaPos.x = (deltaPos.x*gain);
-			deltaPos.y = (deltaPos.y*gain);
-			deltaPos.z = (deltaPos.z*gain);
+//
+//	WMRA::omni o;
+//
+//	cout << "Starting in 5...\n\n" << endl;
+//	Sleep(5000);
+//	cout << "Moving!\n\n" << endl;
+//	
+//	while(count < 200)
+//	{
+//		Sleep(300);
+//		deltaPos = o.getDeltaPose();
+//		if(deltaPos.x != 0 || deltaPos.y != 0 || deltaPos.z != 0)
+//		{
+//			count++;
+//			deltaPos.x = (deltaPos.x*gain);
+//			deltaPos.y = (deltaPos.y*gain);
+//			deltaPos.z = (deltaPos.z*gain);
 //			wmraArm.teleoperation(deltaPos,dt);
-		}
-		else
-		{
-			deltaPos.clear();
+//		}
+//		else
+//		{
+//			deltaPos.clear();
 //			wmraArm.teleoperation(deltaPos,dt);
-		}
-	}
+//		}
+//	}
 //	wmraArm.toReady(); // moves arm to ready position
-	cout << "Sleeping for 20 seconds.." << endl;
-	Sleep(20000); // wait 20 seconds
-	return 0;
-}
-
-
-int teleoperationWithOmni()
-{
-	float gain = 1.2;
-	const double deg2rad = 0.0174532925;
-	double dt = 10;
-	int count = 0;
-	
-	WMRA::Pose curPos, deltaPos;
-	WMRA::WMRA_module wmraArm;
-
-	WMRA::omni o;
-
-	cout << "Starting in 5...\n\n" << endl;
-	Sleep(5000);
-	cout << "Moving!\n\n" << endl;
-	
-	while(count < 200)
-	{
-		Sleep(300);
-		deltaPos = o.getDeltaPose();
-		if(deltaPos.x != 0 || deltaPos.y != 0 || deltaPos.z != 0)
-		{
-			count++;
-			deltaPos.x = (deltaPos.x*gain);
-			deltaPos.y = (deltaPos.y*gain);
-			deltaPos.z = (deltaPos.z*gain);
-			wmraArm.teleoperation(deltaPos,dt);
-		}
-		else
-		{
-			deltaPos.clear();
-			wmraArm.teleoperation(deltaPos,dt);
-		}
-	}
-	wmraArm.toReady(); // moves arm to ready position
-	cout << "Sleeping for 20 seconds.." << endl;
-	Sleep(20000); // wait 20 seconds
-	return 0;
-}
+//	cout << "Sleeping for 20 seconds.." << endl;
+//	Sleep(20000); // wait 20 seconds
+//	return 0;
+//}
 
 //
 //int circleWithTeleoperation()
