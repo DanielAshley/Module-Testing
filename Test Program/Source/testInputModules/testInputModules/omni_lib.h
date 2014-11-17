@@ -18,8 +18,10 @@ namespace WMRA{
 		WMRA::Pose getDeltaPose();
 		bool checkButton1();
 		bool checkButton2();
+		int isInitialized();
 	private:
 		HHD hHD;
+		int initialized;
 	};
 };
 

@@ -1,7 +1,7 @@
 
 #include "WmraTypes.h"
 #include "WMRA_module.h"
-//#include "omni_lib.h"
+#include "omni_lib.h"
 
 #include <Windows.h>
 #include <iostream>
@@ -13,14 +13,18 @@ void main(){
 	// Initialize WMRA
 	WMRA::WMRA_module wmra;
 	
+	WMRA::omni o;
+	WMRA::Pose OmniPose;
+	bool omniButton1, omniButton2;
+
 	//Initialize Variables
-	int currentMotor;
+	int currentMotor = 0;
 	char keypress;
 
 
 	cout << "\t~~~~~ Welcome to the Mr.Fix-It Program ~~~~~\n" << endl;
 	cout << "Press h for help or move joint 1" << endl;
-
+	
 	while (1)
     {
 		keypress = ' ';
@@ -76,15 +80,51 @@ void main(){
 		}
 		else if(keypress == 'W')
 		{
-			wmra.moveJoint(currentMotor,0.03,1);
+			if(wmra.isInitialized())
+				wmra.moveJoint(currentMotor,0.01,1);
 		}
 		else if(keypress == 'S')
 		{
-			wmra.moveJoint(currentMotor,0.03,1);
+			if(wmra.isInitialized())
+				wmra.moveJoint(currentMotor,-0.01,1);
 		}
 		else if(keypress == 'D')
 		{
-			wmra.stop();
+			if(wmra.isInitialized())
+				wmra.stop();
+		}
+		else if(keypress == 'O')
+		{
+			if(o.isInitialized())
+			{
+				OmniPose = o.getDeltaPose();
+				omniButton1 = o.checkButton1();
+				omniButton2 = o.checkButton2();
+				cout << "Omni Pose - X: " << OmniPose.x << "\tY: " << OmniPose.y << "\tZ: " << OmniPose.z << "\tPitch: " << OmniPose.pitch << "\tRoll: " << OmniPose.roll << "\tYaw: " << OmniPose.yaw << endl;
+				cout << "Omni Buttons - B1: " << omniButton1 << "\tB2: " << omniButton2 << endl;
+			}
+		}
+		else if(keypress == 'T')
+		{
+			if(o.isInitialized())
+			{
+				if(wmra.isInitialized())
+				{
+					for(int i = 0; i < 1000; i++)
+					{
+						Sleep(10);
+						cout << "Count: " << i << endl;
+						OmniPose = o.getDeltaPose();
+						wmra.teleoperation(OmniPose,10);
+					}
+					wmra.toReady();
+				}
+			}
+		}
+		else if(keypress == 'R')
+		{
+			cout << "Resetting WMRA" << endl;
+			wmra.initialize();
 		}
 		else if(keypress == 'Q')
 		{
@@ -92,28 +132,31 @@ void main(){
 		}
 		else if(keypress == 'P')
 		{
-			WMRA::JointValueSet joints = wmra.getJointAngles();
-			WMRA::Pose currentPose = wmra.getPose();
+			if(wmra.isInitialized())
+			{
+				WMRA::JointValueSet joints = wmra.getJointAngles();
+				WMRA::Pose currentPose = wmra.getPose();
 
-			cout << "\t-------------------------------------" << endl;
-			cout << "\t ~~~~~ Current Joint Positions ~~~~~" << endl;
-			cout << "Joint 1: " << joints.Joint[0] << endl;
-			cout << "Joint 2: " << joints.Joint[1] << endl;
-			cout << "Joint 3: " << joints.Joint[2] << endl;
-			cout << "Joint 4: " << joints.Joint[3] << endl;
-			cout << "Joint 5: " << joints.Joint[4] << endl;
-			cout << "Joint 6: " << joints.Joint[5] << endl;
-			cout << "Joint 7: " << joints.Joint[6] << endl;
-			cout << "Joint 8: " << joints.Joint[7] << endl;
+				cout << "\t-------------------------------------" << endl;
+				cout << "\t ~~~~~ Current Joint Positions ~~~~~" << endl;
+				cout << "Joint 1: " << joints.Joint[0] << endl;
+				cout << "Joint 2: " << joints.Joint[1] << endl;
+				cout << "Joint 3: " << joints.Joint[2] << endl;
+				cout << "Joint 4: " << joints.Joint[3] << endl;
+				cout << "Joint 5: " << joints.Joint[4] << endl;
+				cout << "Joint 6: " << joints.Joint[5] << endl;
+				cout << "Joint 7: " << joints.Joint[6] << endl;
+				cout << "Joint 8: " << joints.Joint[7] << endl;
 			
-			cout << "\t ~~~~~ Current Arm Pose ~~~~~" << endl;
-			cout << "X: " << currentPose.x << endl;
-			cout << "Y: " << currentPose.y << endl;
-			cout << "Z: " << currentPose.z << endl;
-			cout << "Roll: " << currentPose.roll << endl;
-			cout << "Pitch: " << currentPose.pitch << endl;
-			cout << "Yaw: " << currentPose.yaw << endl;
-			cout << "\t-------------------------------------" << endl;
+				cout << "\t ~~~~~ Current Arm Pose ~~~~~" << endl;
+				cout << "X: " << currentPose.x << endl;
+				cout << "Y: " << currentPose.y << endl;
+				cout << "Z: " << currentPose.z << endl;
+				cout << "Roll: " << currentPose.roll << endl;
+				cout << "Pitch: " << currentPose.pitch << endl;
+				cout << "Yaw: " << currentPose.yaw << endl;
+				cout << "\t-------------------------------------" << endl;
+			}
 		}
 		else if(keypress == ' ')
 		{
@@ -127,6 +170,128 @@ void main(){
 	}
 
 }
+
+
+
+
+//void mrFixIt(){
+//	// Initialize WMRA
+//	WMRA::WMRA_module wmra;
+//	
+//	//Initialize Variables
+//	int currentMotor;
+//	char keypress;
+//
+//
+//	cout << "\t~~~~~ Welcome to the Mr.Fix-It Program ~~~~~\n" << endl;
+//	cout << "Press h for help or move joint 1" << endl;
+//
+//	while (1)
+//    {
+//		keypress = ' ';
+//		// Check for keyboard input.
+//		if (_kbhit())
+//			keypress = _getch();
+//		keypress = toupper(keypress);
+//
+//		if (keypress == 'H')
+//		{
+//			// #DEBUG - add help menu
+//			cout << "\t ~~~~~ Help Menu ~~~~~" << endl;
+//		}
+//		else if(keypress == '1')
+//		{
+//			currentMotor = 0;
+//			cout << "Joint 1 Selected" << endl;
+//		}
+//		else if(keypress == '2')
+//		{
+//			currentMotor = 1;
+//			cout << "Joint 2 Selected" << endl;
+//		}
+//		else if(keypress == '3')
+//		{
+//			currentMotor = 2;
+//			cout << "Joint 3 Selected" << endl;
+//		}
+//		else if(keypress == '4')
+//		{
+//			currentMotor = 3;
+//			cout << "Joint 4 Selected" << endl;
+//		}
+//		else if(keypress == '5')
+//		{
+//			currentMotor = 4;
+//			cout << "Joint 5 Selected" << endl;
+//		}
+//		else if(keypress == '6')
+//		{
+//			currentMotor = 5;
+//			cout << "Joint 6 Selected" << endl;
+//		}
+//		else if(keypress == '7')
+//		{
+//			currentMotor = 6;
+//			cout << "Joint 7 Selected" << endl;
+//		}
+//		else if(keypress == '8')
+//		{
+//			currentMotor = 7;
+//			cout << "Joint 8 Selected" << endl;
+//		}
+//		else if(keypress == 'W')
+//		{
+//			wmra.moveJoint(currentMotor,0.03,1);
+//		}
+//		else if(keypress == 'S')
+//		{
+//			wmra.moveJoint(currentMotor,0.03,1);
+//		}
+//		else if(keypress == 'D')
+//		{
+//			wmra.stop();
+//		}
+//		else if(keypress == 'Q')
+//		{
+//			return;
+//		}
+//		else if(keypress == 'P')
+//		{
+//			WMRA::JointValueSet joints = wmra.getJointAngles();
+//			WMRA::Pose currentPose = wmra.getPose();
+//
+//			cout << "\t-------------------------------------" << endl;
+//			cout << "\t ~~~~~ Current Joint Positions ~~~~~" << endl;
+//			cout << "Joint 1: " << joints.Joint[0] << endl;
+//			cout << "Joint 2: " << joints.Joint[1] << endl;
+//			cout << "Joint 3: " << joints.Joint[2] << endl;
+//			cout << "Joint 4: " << joints.Joint[3] << endl;
+//			cout << "Joint 5: " << joints.Joint[4] << endl;
+//			cout << "Joint 6: " << joints.Joint[5] << endl;
+//			cout << "Joint 7: " << joints.Joint[6] << endl;
+//			cout << "Joint 8: " << joints.Joint[7] << endl;
+//			
+//			cout << "\t ~~~~~ Current Arm Pose ~~~~~" << endl;
+//			cout << "X: " << currentPose.x << endl;
+//			cout << "Y: " << currentPose.y << endl;
+//			cout << "Z: " << currentPose.z << endl;
+//			cout << "Roll: " << currentPose.roll << endl;
+//			cout << "Pitch: " << currentPose.pitch << endl;
+//			cout << "Yaw: " << currentPose.yaw << endl;
+//			cout << "\t-------------------------------------" << endl;
+//		}
+//		else if(keypress == ' ')
+//		{
+//			// do nothing
+//		}
+//		else
+//		{
+//			// display key value if an unused key is pressed
+//			cout << keypress << endl;
+//		}
+//	}
+//
+//}
 //
 //int main()
 //{
