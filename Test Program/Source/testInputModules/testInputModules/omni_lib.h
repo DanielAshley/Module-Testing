@@ -4,6 +4,7 @@
 #include <vector>
 
 #pragma once
+
 namespace WMRA{
 	class Pose;
 	typedef unsigned int HHD;
@@ -15,11 +16,10 @@ namespace WMRA{
 		omni();
 		~omni();
 		WMRA::Pose getDeltaPose();
-		static void omniThread(void *aArg);
-		HHD hHD;
-
+		bool checkButton1();
+		bool checkButton2();
 	private:
-		double gain;
+		HHD hHD;
 	};
 };
 
